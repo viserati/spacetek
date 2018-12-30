@@ -1,0 +1,56 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+
+
+
+----------------------------
+
+
+For Bootstrap:
+gemfiles:
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
+
+js file:
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+
+scss file:
+*
+*/
+@import "bootstrap";
+
+For Media Upload:
+gemfiles:
+gem 'paperclip', '~> 6.0'
+gem 'paperclip-av-transcoder'
+gem 'aws-sdk-s3', '~> 1.9'
